@@ -1,0 +1,100 @@
+<html>
+<title>WEBGDev Docs</title>
+<link rel="icon" href="icon.png"/>
+<link rel="stylesheet" href="Jeasy.css"></link>
+<body>
+<div id="nav" style="transition:3s;height: 90px;font-family:Courier New;">
+	<h1 style="text-align:center;">Want to make games using JS ? Try WebGDev</h1>
+	<h3 style="text-align:center;">Javascript simplified</h3>
+	</div>
+<br/><br/>
+<h3><a href="index.html">Home</a></h3>
+<br/><br/>
+<h1>Docs: </h1>
+<div id="code">
+<code style="font-size:20px;">
+//setup function is ran only once<br/>
+function setup(){
+	<br/>
+}
+<br/>
+//The key function is ran on keypresses<br/>
+function key(){<br/>
+	<br/>
+}
+
+The 'plot' function plots the background of you game, it has these arguments<br/>
+1]width<br/>
+2]height<br/>
+3]x(coordinate of background)<br/>
+4]y(coordinate of background)<br/>
+5]colour of background<br/>
+6](OPTIONAL)bg image url for background<br/>
+example => plot("100px","100px",0,0,"purple","img.png") will create a rectangle<br/>
+with the size of 100pxX100px at the toplef(x=0,y=0) of the screen with <br/>
+the background image "img.png" and background color of purple<br/>
+<br/><br/>
+The 'ImgSprite' function load an image sprite, it has These arguments<br/>
+1] Image url<br/>
+2]Width<br/>
+3]Height<br/>
+4]HTML ID you want to asign to the image<br/>
+5]X<br/>
+6]Y<br/>
+example => ImgSprite("img.txt",50,50,"g",0,0) will create an image with <br/>
+width and height 50,50 and at the topleft(x=0,y=0) of the screen with the id "g"<br/>
+<br/><br/>
+The 'clear' function clears a surface, it has one argument<br/>
+1]HTML ID of the lement you want to clear<br/>
+example => clear("p") will clear the screen<br/>
+<br/><br/>
+The 'collide' function hecks colission of 2 objects, it has these arguments<br/>
+1]HTML ID of first sprite<br/>
+2]HTML ID of secons sprite<br/>
+example => collide("h","c") will return true if collision has occured in sprites with the id "h" and "c"<br/>
+and false if not<br/>
+<br/><br/>
+The 'Text' function is used to display text on the screen,it has these arguments<br/>
+1]The string you want to display("");<br/>
+2]OPTIONAL)The x position for text on the screen<br/>
+3]OPTIONAL)The y position for text on the screen<br/>
+4](OPTIONAL)A list of additional add-ons.The format is:<br/>
+	1)The first item of the list is "i". if you want italics, you must type "i"<br/>
+	on the index zero of this list<br/>
+	2)The second item of the list is "b". if you want bold text, you must type "b"<br/>
+	on the index one of this list<br/>
+	3)The third item of the list is "font".<br/> 
+	if you want to change the default font, you must type the name of the desired font in <br/>
+	index two of this list<br/>
+example => Text("hi",0,0,["i","b","impact"]) will give and html output => <i><b style="font-family:'impact'">hi</b></i><br/>
+<br/><br/>
+The MoveTo function moves any sprite to the desired coordinates, it has these arguments<br/>
+1]HTML ID of your sprite<br/>
+2]X coordinate to move<br/>
+3]Y coordinate to move<br/>
+<br/><br/>
+example => MoveTo("h",0,100); will move anything with the ID "h" to x=0 and y=100<br/>
+<br/><br/>
+The 'flip' function is used to flip a sprite on the x or y axis,it has these arguments<br/>
+1]HTML ID of the sprite to be flipped<br/>
+2]An array of directions with [x,y]<br/>
+example => flip("h"[true,false]) will flip the sprite on the x-axis<br/>
+example => flip("h"[false,true]) will flip the sprite on the y-axis<br/>
+example => flip("h"[true,true]) will flip the sprite on the y-axis and x-axis<br/>
+example => flip("h"[false,false]) will not flip the sprite<br/>
+<br/><br/>
+The 'show' function if used to show a sprite,it hase this argument<br/>
+1]HTML ID of the sprite to show<br/>
+example => show("h") will show the sprite at x=0,y=0(this can be altered by using the MoveTo() function)<br/>
+<br/><br/>
+The 'hide' function if used to hide a sprite,it hase this argument<br/>
+1]HTML ID of the sprite to hide<br/>
+example => hide("h") will hide the sprite<br/>
+<br/><br/>
+The 'Rotate' function is used to rotate a sprite,it has these arguments<br/>
+1]HTML ID of sprite to rotate<br/>
+2]Angle for the sprite to rotate<br/>
+example => Rotate("h",50) will rotate the sprite with the id "h" at 50 deg<br/>
+</code></div><br/>
+</body>
+</html>

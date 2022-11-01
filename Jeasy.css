@@ -1,0 +1,56 @@
+#nav:hover{
+	width: 60%;
+	background : black;
+	color: white;
+	box-shadow: 10px 10px 10px rgb(255,255,255);
+}
+
+#nav{
+	width: 100%;
+	background:lightgrey;
+	font-size: 25px;
+}
+
+th{
+	font-size: 50px;
+	box-shadow: 0 0 20px rgb(150,150,150);
+	padding-left: 2%;
+	text-align: center;
+	width: 10%;
+	background: white;
+}
+
+td{
+	padding-left: 80px;
+	box-shadow: 0 0 20px rgb(150,150,150);
+	font-size: 40px;
+	background: #cdb1b1;
+}
+
+a{
+	font-family: Tahoma;
+	transition: all 2s;
+	display: inline-block;
+	color: red;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+}
+
+a:hover{
+	transform: rotateZ(360deg);
+	color: orange;
+	font-size: 25px;
+	text-shadow: 50px 10px 10px blue;
+}
+
+h3{
+	display: block;
+	text-align: center;
+	font-size:15px;
+}
+
+#code{
+	box-shadow: 5px 5px 5px 5px;
+	width: 970px;
+}
